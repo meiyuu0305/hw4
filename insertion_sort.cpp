@@ -47,8 +47,8 @@ int main() {
     sort(asc_test_values.begin(), asc_test_values.end());
     sort(desc_test_values.begin(), desc_test_values.end(), greater<int>());
     comp_ran = insertion_sort(test_values, VECTOR_SIZE);
-    comp_asc = insertion_sort(test_values, VECTOR_SIZE);
-    comp_desc = insertion_sort(test_values, VECTOR_SIZE);
+    comp_asc = insertion_sort(asc_test_values, VECTOR_SIZE);
+    comp_desc = insertion_sort(desc_test_values, VECTOR_SIZE);
     //}
     sumOfComparison = comp_ran + comp_asc + comp_desc;
     cout<<"\nNumber of comparisons in random vector: " <<comp_ran<<endl; // /simul_size
